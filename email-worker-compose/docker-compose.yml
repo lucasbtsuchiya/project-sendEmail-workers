@@ -10,6 +10,6 @@ services:
     volumes:
       # Volume dos dados
       - dados:/var/lib/postgresql/data
-      #script
+      # Scripts
       - ./scripts:/scripts
       - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
