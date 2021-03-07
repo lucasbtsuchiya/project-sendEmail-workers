@@ -9,4 +9,4 @@ services:
       - dados:/var/lib/postgresql/data
       #script
       - ./scripts:/scripts
-      -./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
