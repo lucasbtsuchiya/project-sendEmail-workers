@@ -16,7 +16,8 @@ services:
   frontend:
     image: nginx:1.13
     volumes:
-    # Site
+    # Sitedir
+
     - ./web:/usr/share/nginx/html/
     ports: 
       - 80:80
@@ -28,4 +29,4 @@ services:
     working_dir: /app
     command: bash ./app
     ports: 
-      - 9001:9001
+      - 8080:8080
