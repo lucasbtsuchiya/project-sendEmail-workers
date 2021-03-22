@@ -26,6 +26,6 @@ services:
     # Aplicação
     - ./app:/app
     working_dir: /app
-    command: ./app
+    command: bash ./app
     ports: 
       - 8080:8080
