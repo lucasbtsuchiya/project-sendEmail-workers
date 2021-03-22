@@ -28,4 +28,4 @@ services:
     working_dir: /app
     command: bash ./app
     ports: 
-      - 8080:8080
+      - 9001:9001
