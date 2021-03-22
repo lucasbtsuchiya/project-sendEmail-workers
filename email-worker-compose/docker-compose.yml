@@ -19,7 +19,7 @@ services:
     # Site
     - ./web:/usr/share/nginx/html/
     ports: 
-    - 80:80
+      - 80:80
   app:
     image: python:3.6
     volumes: 
