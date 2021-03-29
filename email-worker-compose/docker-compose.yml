@@ -50,7 +50,7 @@ services:
     networks:
       - fila
   worker:
-    image: worker
+    image: python:3.6
     volumes:
       # Worker
       - ./worker:/worker
