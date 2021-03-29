@@ -51,7 +51,7 @@ services:
     networks: 
       - fila
   worker:
-    build: worker
+    image: worker
     volumes:
       # Worker
       - ./worker:/worker
