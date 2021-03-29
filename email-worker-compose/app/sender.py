@@ -19,6 +19,7 @@ class Sender(Bottle):
         cur.execute(SQL, (assunto, mensagem))
         self.conn.commit()
         cur.close()
+        
         msg = {'assunto': assunto, 'mensagem': mensagem}
         self.fila.rpush('sender', json.dumps(msg))
 
