@@ -51,13 +51,13 @@ services:
     networks: 
       - fila
   worker:
-    image: python:3.6
-    volumes: 
-    # Worker
+    build: worker
+    volumes:
+      # Worker
       - ./worker:/worker
     working_dir: /worker
     command: worker.py
-    networks: 
+    networks:
       - fila
-    depends_on: 
+    depends_on:
       - queue
